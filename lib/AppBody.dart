@@ -23,7 +23,7 @@ class _AppBodyState extends State<AppBody> {
   Future<void> fetchData() async {
     try {
       var res = await http
-          .get(Uri.parse("https://jsonplaceholder.typicodesss.com/todos"));
+          .get(Uri.parse("https://jsonplaceholder.typicode.com/todos"));
       await Future.delayed(const Duration(seconds: 2));
       setState(() {
         _res = Response.update(
